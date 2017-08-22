@@ -1,0 +1,47 @@
+projects:
+    resource: ApiBundle\Controller\ProjectController
+    type: rest
+
+task:
+    resource: ApiBundle\Controller\TaskController
+    type: rest
+
+issues:
+    resource: ApiBundle\Controller\IssueController
+    type: rest
+
+checklists:
+    resource: ApiBundle\Controller\ChecklistController
+    type: rest
+
+customerfeedback:
+    resource: ApiBundle\Controller\CustomerFeedbackController
+    type: rest
+
+user:
+    resource: ApiBundle\Controller\UserController
+    type: rest
+
+pomodoro:
+    resource: ApiBundle\Controller\PomodoroController
+    type: rest
+
+teammember:
+    resource: ApiBundle\Controller\TeamMemberController
+    type: rest
+
+attachment:
+    resource: ApiBundle\Controller\AttachmentController
+    type: rest
+
+admin:
+    resource: ApiBundle\Controller\AdminController
+    type: rest
+
+settings:
+    resource: ApiBundle\Controller\SettingsController
+    type: rest
+
+locations:
+    resource: ApiBundle\Controller\LocationController
+    type: rest

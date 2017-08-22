@@ -1,0 +1,21 @@
+<div class="container">
+        <form class="form" #loginForm="ngForm">
+            <ngb-alert *ngIf="error == true" type="danger" dismissible="false">
+                {{errorMessage}}
+            </ngb-alert>
+            <ngb-alert *ngIf="success == true" type="success" dismissible="true">
+                {{successMessage}}
+            </ngb-alert>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="_username" id="username" [(ngModel)]="credentials._username" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="_username" id="password" [(ngModel)]="credentials._password" placeholder="Enter username" required>
+            </div>
+            <button type="submit" class="btn btn-block" (click)="login(loginForm)">Login</button>
+            <p class="info">Sign up <span (click)='navigate()'>here</span> </p>
+        </form>
+
+</div>

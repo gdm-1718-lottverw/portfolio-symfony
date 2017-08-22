@@ -1,0 +1,24 @@
+default:
+    autoload: src
+    translation:
+        locale: en
+    extensions:
+        Behat\Symfony2Extension: ~
+        Behat\MinkExtension:
+            base_url: "https://www.nmdad3"
+            sessions:
+                default:
+                    symfony2: ~
+    suites:
+        app_bundle_features:
+            type: symfony_bundle
+            bundle: AppBundle
+            contexts:
+                 - AppBundle\Features\Context\FeatureContext
+                 - Behat\MinkExtension\Context\MinkContext
+        api_bundle_features:
+            type: symfony_bundle
+            bundle: ApiBundle
+            contexts:
+                 - ApiBundle\Features\Context\FeatureContext
+                 - Behat\MinkExtension\Context\MinkContext

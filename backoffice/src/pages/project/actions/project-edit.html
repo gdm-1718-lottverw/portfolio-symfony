@@ -1,0 +1,33 @@
+<div class="container">
+    <form ProjectForm="ngForm">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" name="title" [(ngModel)]="project.title" placeholder="Enter title" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea type="text" class="form-control" id="description" name="description" [(ngModel)]="project.description" aria-describedby="descriptionHelp" placeholder="a description.." required></textarea> <small id="descriptionHelp" class="form-text text-muted">Add a description.</small>
+        </div>
+        <div class="form-group">
+            <label for="customer">Customer</label>
+            <input type="text" class="form-control" id="customer" name="customer" [(ngModel)]="project.customer"  aria-describedby="emailHelp" placeholder="Enter email" required>
+        </div>
+        <div class="input-group">
+            <label for="customer"></label>
+            <date-picker [(ngModel)]="project.deadline" showClearButton=false  name="deadline"></date-picker>
+       </div>
+        <button type="submit" (click)="submit(ProjectForm)" class="btn btn-primary">Submit</button>  
+    </form>
+</div>
+<!--
+export class Project {
+
+    issues?: Issue[];
+    checklist?: Checklist;
+    tasks?: Task[];
+    group?: {
+        name: string;
+        id: number;
+    };
+    feedback: Feedback[];
+}-->

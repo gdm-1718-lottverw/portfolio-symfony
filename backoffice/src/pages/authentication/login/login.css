@@ -1,0 +1,26 @@
+.container {
+    padding: 100px 150px;
+}
+
+
+.container .form button{
+    background: rgb(255, 0, 0);
+    cursor: pointer;
+    color: white;
+}
+
+.container .form button:hover {
+    background: rgb(200, 0, 0);
+    cursor: pointer;
+}
+
+.container .form .info {
+    margin-top: 35px;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+}
+.container .form .info span{
+   color: red;
+    text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+.idea/
+.vagrant/
+.vscode/
+bower_components/
+nbproject/
+node_modules/
+/vendor/
+/.proxy
+/Artestead.json
+/Artestead.yaml
+/after.sh
+/aliases.sh
+!bin

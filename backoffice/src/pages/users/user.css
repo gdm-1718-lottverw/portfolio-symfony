@@ -1,0 +1,94 @@
+.container {
+    padding: 100px 50px;
+}
+.container .link {
+    margin: 0px 0 15px 0;
+    display: block;
+    cursor: pointer;
+}
+.container .user {
+    margin-bottom: 80px;
+}
+.container .user .head {
+    background: rgba(240, 240, 240, 1);
+    padding: 2px 16px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.container .user .head .text-muted {
+    color: red;
+}
+.container .user .head h3 fa {
+    text-align: right;
+    float: right;
+    font-size: 17px;
+    margin: -12px 0px;
+}
+.container .user .owner {
+    font-size: 13px;
+    width: 50%;
+    padding: 7px 0 0 0;
+    margin: 0 5px;
+}
+.container .user .team {
+    font-size: 13px;
+    width: 50%;
+    padding: 7px 0 0 0;
+    margin: 0 5px;
+}
+.container .user .items {
+    display: flex;
+    padding: 5px;
+    border: 1px solid rgba(240, 240, 240, 1);
+}
+.container .user .items p {
+    font-size: 12px;
+    margin: 5px;
+    padding: 3px;
+}
+
+
+.container .user .delete {
+    background: red;
+    float: right;
+    color: white;
+    margin-top: 5px;
+}
+.container .user button:hover {
+    background: rgb(200, 0, 0);
+    cursor: pointer;
+    outline: none;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(55,55,55, 0.7);
+}
+.overlay .alert {
+    background: white;
+    padding: 75px;
+    margin: 20% 27%;
+    box-shadow: 0px 0px 4px rgba(55,55,55, 0.7);
+    text-align: center;
+}
+.overlay .alert p {
+    font-size: 19px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.overlay .alert a {
+    width: 60%;
+    color: red;
+    margin: 24px;
+    text-transform: uppercase;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.overlay .alert .confirm {
+    color: green;
+}

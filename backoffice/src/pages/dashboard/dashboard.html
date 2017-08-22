@@ -1,0 +1,22 @@
+<div class="container">
+    <p class="overlay">Users location</p>
+    <agm-map [latitude]="lat" [longitude]="lng"
+             [zoom]="zoom"
+             [disableDefaultUI]="true"
+             [zoomControl]="true"
+             [styles]="styles">
+        <agm-marker
+                *ngFor="let m of markers; let i = index"
+                (markerClick)="clickedMarker(m.label, i)"
+                [latitude]="m.lat"
+                [longitude]="m.lng"
+                [label]="m.label"
+                [markerDraggable]="m.draggable"
+                (dragEnd)="markerDragEnd(m, $event)">
+        </agm-marker>
+    </agm-map>
+    <div id="pomodoro">
+        <chart [options]="project_deadline_graph"></chart>
+    </div>
+
+</div>

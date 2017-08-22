@@ -1,0 +1,29 @@
+.container {}
+.container .overlay {
+    color: white;
+    z-index: 30;
+    position: absolute;
+    background: red;
+    padding: 15px 40px;
+    left: 0;
+    right: 0;
+    top: 62px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.container agm-map {
+    z-index: 3;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 62px;
+}
+.container #pomodoro chart{
+    position: absolute;
+    top: 411px;
+    left: 0;
+    right: 0;
+    height: 200px;
+}

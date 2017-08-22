@@ -1,0 +1,35 @@
+<div class="container">
+    <ngb-alert *ngIf="error == true" type="danger" dismissible="false">
+            {{errorMessage}}
+     </ngb-alert>
+    <a (click)="add()" class="link"><fa name="plus-circle"></fa> add new project</a>
+    <div class="project" *ngFor="let p of projects">
+        <div class="head">
+            <h3>
+                {{p.title}}
+                <small class="text-muted">{{p.deadline | date}}</small>
+                <fa name="pencil" (click)="navigate(p.hash)"></fa>
+            </h3>
+            <h6>{{p.description}}</h6>
+        </div>
+        <div class="meta">
+            <p class="owner">Customer: {{p.customer}}</p>
+            <p class="team">Team: {{p.group?.name}}</p>
+        </div>
+        <div class="items">
+            <div class="item">
+                <ng-template *ngFor="let i of p?.issues; trackBy: i?.id">
+                    <p *ngIf="i.solved == false">{{i.title}}</p>
+                </ng-template>
+            </div>
+            <div class="item">
+                <ng-template *ngFor="let t of p?.tasks;trackBy: t?.id">
+                    <p *ngIf="t.finished == false">{{t.name}}</p>
+                </ng-template>
+            </div>
+            <div class="item">
+                <p *ngFor="let a of p.checklist.items">{{a.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>

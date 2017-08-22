@@ -1,0 +1,65 @@
+.container {
+    padding: 100px 50px;
+}
+.container .link {
+    margin: 0px 0 15px 0;
+    display: block;
+    cursor: pointer;
+}
+.container .project {
+    margin-bottom: 80px;
+}
+.container .project .head {
+    background: rgba(240, 240, 240, 1);
+    padding: 2px 16px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.container .project .head h3 fa {
+    text-align: right;
+    float: right;
+    font-size: 17px;
+    margin: -12px 0px;
+}
+.container .project .head .text-muted {
+    color: red;
+}
+.container .project .meta {
+    border-left: 1px solid rgba(240, 240, 240, 1);
+    padding: 7px 12px;
+    border-right: 1px solid rgba(240, 240, 240, 1);
+}
+.container .project .meta .owner {
+    font-size: 13px;
+    width: 50%;
+    padding: 7px 0 0 0;
+    margin: 0 5px;
+}
+.container .project .meta .team {
+    font-size: 13px;
+    width: 50%;
+    padding: 7px 0 0 0;
+    margin: 0 5px;
+}
+.container .project .items {
+    display: flex;
+    border: 1px solid rgba(240, 240, 240, 1);
+}
+.container .project .items .item {
+    border-left: 1px solid rgba(240, 240, 240, 1);
+    width: calc((100% / 3) - 6px);
+    padding: 0 20px;
+}
+.container .project .item p {
+    font-size: 12px;
+    margin: 5px;
+    padding: 3px;
+}
+.container .project .items .item p .in-progress {
+    border-bottom: 1px solid yellow;
+}
+
+
+.container .project .items .item p .danger {
+    border-bottom: 1px solid red;
+}

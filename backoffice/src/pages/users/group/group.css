@@ -1,0 +1,142 @@
+.container {
+    padding: 100px 50px;
+}
+.container .actions {
+    margin: 0px 0 15px 0;
+    display: flex;
+}
+.container .actions a {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.container .group {
+    margin-bottom: 110px;
+}
+.container .group .head {
+    background: rgba(240, 240, 240, 1);
+    padding: 2px 16px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.container .group .head .text-muted {
+    color: red;
+}
+.container .group .head h3 fa {
+    text-align: right;
+    float: right;
+    font-size: 17px;
+    margin: -12px 0px;
+}
+.container .group .owner {
+    font-size: 13px;
+    width: 50%;
+    padding: 7px 0 0 0;
+    margin: 0 5px;
+}
+.container .group .team {
+    font-size: 13px;
+    width: 50%;
+    padding: 7px 0 0 0;
+    margin: 0 5px;
+}
+.container .group .items {
+    padding: 5px;
+    border: 1px solid rgba(240, 240, 240, 1);
+    display: flex;
+}
+.container .group .items p {
+    font-size: 12px;
+    margin: 5px;
+    padding: 3px 15px;
+    width: calc((100% / 3) - 10px);
+    border-right: 1px solid rgba(240, 240, 240, 1);
+    border-left: 1px solid rgba(240, 240, 240, 1);
+}
+
+.container .group .items p fa{
+   float: right;
+   font-size: 15px;
+   color: red;
+}
+.container .group .dropdown {
+    border: 1px solid rgba(240, 240, 240, 1);
+    border-top: none;
+}
+.container .group .dropdown p {
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px;
+    margin: 0;
+}
+.container .group .dropdown .arrow {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 89%;
+}
+.container .group .dropdown .down {
+    width: calc(100% + 2px);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    left: -1px;
+    margin: 0;
+    border: 0;
+    background: rgba(245, 245, 245, 1);
+}
+.container .group .dropdown .down .dropdown-item {
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+    padding: 7px 15px;
+}
+.container .group .dropdown .down .dropdown-item:hover {
+    background: rgba(235, 235, 235, 1);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(55,55,55, 0.7);
+}
+.overlay .alert {
+    background: white;
+    padding: 75px;
+    margin: 20% 27%;
+    box-shadow: 0px 0px 4px rgba(55,55,55, 0.7);
+    text-align: center;
+}
+.overlay .alert .exit {
+    color: black;
+    position: absolute;
+    margin-left: 19.5%;
+    margin-top: -61px;
+    font-size: 20px;
+}
+.overlay .alert form {
+    color: black
+}
+
+.overlay .alert form .btn{
+    margin-top: 5px;
+    color: white;
+    background-color: red;
+}
+
+.overlay .alert form .btn:hover{
+    background-color:rgb(200, 0, 0);
+}
+
+
+

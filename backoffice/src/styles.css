@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+body * {
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+.primary {
+    background-color: rgb(55,55,55);
+}
+.secondary {
+    background-color: #f9d5d5;
+}
+.success {
+    background-color: #32db64;
+}
+.danger {
+    background-color: #f53d3d;
+}
+.bg-light {
+    background-color: #E9F1DF;
+}
+.bg-dark {
+    background-color: #f4f4f4;
+}
+.work {
+    background-color: #3AA1BF;
+}
+.issue {
+    background-color: #F5BB5B;
+}
+.checklist {
+    background-color: #56D9CD;
+}
+.feedback {
+    background-color: #F3F5E1;
+}
+

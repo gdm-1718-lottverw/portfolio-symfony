@@ -1,0 +1,42 @@
+<div class="container">
+    <ngb-alert *ngIf="error == true" type="danger" dismissible="false">
+            {{errorMessage}}
+     </ngb-alert>
+    <div class="actions">
+        <a (click)="navigate()" class="link"><fa name="chevron-circle-left "></fa> Users </a>
+        <a (click)="overlay = true" class="link"><fa name="plus-circle"></fa> add new group</a>
+    </div>
+    <div class="group" *ngFor="let g of groups, let i = index">
+        <div class="head">
+            <h3>
+                {{g.name}}
+                <fa name="pencil"></fa>
+            </h3>
+        </div>
+        <div class="items">
+            <p *ngIf="g?.users.length == 0">There are no users in this group.</p>
+            <p *ngFor="let u of g?.users; let i2 = index">
+                {{u.username}}
+                <fa (click)="delete(i,i2, g.id, u.username)" name="times-circle"></fa>
+            </p>
+        </div>
+        <div ngbDropdown class="d-inline-block dropdown">
+            <p id="dropdownBasic1" ngbDropdownToggle>add user <fa name="angle-down" class="arrow"></fa></p>
+          
+            <div class="down" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button class="dropdown-item" *ngFor="let u of users" (click)="addUserToGroup(i, g.id, u.username)">{{u.username}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay" *ngIf="overlay == true">
+    <div class="alert"> 
+        <a (click)="overlay = false" class="exit"><fa name="times-circle"></fa></a>
+        <div class="error" *ngIf="error == true">{{errorMessage}}</div>
+        <form #addGroup="ngForm">
+            <input type="text" name="name" class="form-control" [(ngModel)]="group.name" placeholder="Name your group" required>
+            <button type="submit" class="btn btn-dark btn-block" (click)="submit(addGroup)">yes</button>
+        </form>
+    </div>
+</div>

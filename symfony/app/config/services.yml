@@ -1,0 +1,25 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: true
+        synthetic: true
+
+    AppBundle\:
+        resource: '../../src/AppBundle/Services'
+        synthetic: true
+        abstract: true
+
+    AppBundle\Services\HashCode:
+        abstract: true
+        synthetic: true
+
+    app.jwt_token_authenticator:
+        parent: lexik_jwt_authentication.security.guard.jwt_token_authenticator
+        class: AppBundle\Security\Guard\JWTAuthenticator
+    

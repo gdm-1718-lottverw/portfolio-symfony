@@ -1,0 +1,8 @@
+!/bin
+/vendor
+/.vagrant
+phpunit.xml
+/Artestead.json
+/Artestead.yaml
+/after.sh
+/aliases.sh
